@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cá Nhân</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #ffe6f2;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #ff4d94;
+            color: white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://source.unsplash.com/1600x900/?pink') no-repeat center/cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff3385;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .about, .portfolio, .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project {
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(255,77,148,0.3);
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #ff4d94;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Hồ sơ cá nhân</div>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> Giới thiệu</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Dự án</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Chào mừng đến với hồ sơ cá nhân</h1>
+        <p>Tôi là một lập trình viên đam mê sáng tạo</p>
+        <a href="#portfolio" class="btn">Xem dự án</a>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>Giới thiệu</h2>
+        <p>Tôi là một lập trình viên yêu thích phát triển web và sáng tạo giao diện đẹp.</p>
+        <img src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-1/481704349_1063611382164513_1801953581129325104_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFRn2Qpgk037i0YEl1-3w-ECIff4YrwxxUIh9_hivDHFZgYDq_KuhgjNvy6ZbnlhKOkjeApQwglTc2oFN-IvxB7&_nc_ohc=R1jM_DlarjEQ7kNvgHMgqCO&_nc_oc=AdkGQXn7lnKYxcEjIB7NxM9_ekLzChoR73UpYDd7-HYA9pQyeBuiULaLh0mc7BqXH_A&_nc_zt=24&_nc_ht=scontent.fhan5-11.fna&_nc_gid=p_sC5AkVkmov-181CnvnMw&oh=00_AYGjUQRvkmTPIM7CAUZtA_Iy0AihDFYXkUZa8uxB8wGxQA&oe=67EF26A5" alt="Ảnh đại diện">
+    </section>
+    
+    <section id="portfolio" class="portfolio">
+        <h2>Dự án của tôi</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://datviettour.com.vn/uploads/images/tin-tuc-SEO/mien-trung/Da-Nang/danh-thang/ba-na-hills.jpg" alt="Dự án 2">
+                <a href="https://lykhong.github.io/b2-b8-/" target="_blank">bài 2</a>
+                <h3>Dự án 1</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 3">
+                <a href="https://lykhong.github.io/b3-b/" target="_blank">bài 3</a>
+                <h3>Dự án 2</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 3">
+                <a href="https://lykhong.github.io/b1-b8-/" target="_blank">bài 1</a>
+                <h3>Dự án 3</h3>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Liên hệ</h2>
+        <p>Email: khongly121406@mail.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Hồ sơ cá nhân. Mọi quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>
